@@ -1,0 +1,47 @@
+@use './variables' as *;
+
+#abt-me {
+    margin-top: 100px;
+    font-family: DM mono, monospace;
+}
+
+.code ul {
+    background-color: $grey;
+    border-radius: 15px;
+    padding: 20px 30px;
+    list-style: none;
+
+    &#console {
+        margin-top: 25px;
+    }
+}
+
+
+.purple {
+    color: #D2A8FF;
+}
+
+.light-blue {
+    color: #A5D6FF;
+}
+
+.dark-blue {
+    color: #84c6ff;
+}
+
+.green {
+    color: rgb(97, 255, 166);
+}
+
+.orange {
+    color: #FF8730;
+}
+
+.red {
+    color: #ff3030;
+}
+
+.indent {
+    margin-inline-start: 20px;
+}
+
