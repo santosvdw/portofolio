@@ -1,0 +1,20 @@
+@use './variables' as *;
+
+nav {
+    width: 70vw;
+    margin: 0 auto;
+    padding: 70px 0;
+
+    ul {
+        display: flex;
+        flex-flow: row wrap;
+        list-style-type: none;
+        gap: 60px;
+
+        a {
+            color: $secondary-clr;
+            text-decoration: none;
+            font-weight: 400;
+        }
+    }
+}
