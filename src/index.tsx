@@ -2,12 +2,23 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 
+fetch('https://api.github.com/users/santosvdw/repos')
+    .then((response) => response.json())
+    .then((data) => {
+    console.log(data)
+    for (let i = 0; i < data.length; i++) {
+      if (data[i].size > 8000) {
+        console.log(data[i].name)
+      }
+    }
+  });
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <App/>
   </React.StrictMode>
 );
 
