@@ -13,5 +13,15 @@ html {
 
 body {
   background-color: $bg-color;
+  height: 200vh;
 }
 
+.App {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+main {
+    width: 70vw;
+}
