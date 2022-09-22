@@ -21,6 +21,9 @@
         i {
             font-size: 1.5rem;
             color: $secondary-clr;
+            &:hover {
+                color: $tertiary-clr;
+            }
         }
     }
 

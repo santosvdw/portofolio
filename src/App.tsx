@@ -11,29 +11,9 @@ import React from 'react';
 import './scss/App.scss';
 import './scss/typography.scss';
 
-// GH user data
 
-const githubUrl: string = 'https://api.github.com/users/santosvdw/repos'
 
-const getGitHubUserData = async () => {
-  const response = await fetch(githubUrl);
-  const jsonData = await response.json();
-  App(jsonData);
-};
-
-getGitHubUserData()
-
-function App(userData: any) {
-  console.log(userData)
-  let projects: any = []
-  for (let i=0;i<userData.length;i++) {
-    if (userData[i].size > 5000) {
-      console.log(userData[i])
-      projects.push(userData[i])
-    }
-  }
-  let project = projects.map((p: any) => p)
-  console.log(project)
+function App() {
   return (
     <div className="App">
       <div className='wrapper'>
@@ -42,7 +22,7 @@ function App(userData: any) {
           <Nav />
           <Header />
           <Code />
-          <Projects key='projects' data={project} />
+          <Projects/>
         </main>
         <OverlayLeft/>
       </div>

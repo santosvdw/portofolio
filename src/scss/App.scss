@@ -26,6 +26,15 @@ main {
     width: 70vw;
 }
 
+a {
+  color: $secondary-clr;
+  font-weight: 400;
+
+  &:hover {
+    color: $tertiary-clr;
+  }
+}
+
 
 //
 
