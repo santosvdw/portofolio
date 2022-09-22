@@ -6,7 +6,7 @@ export default function Nav () {
             <ul>
                 <li><a href="#abt-me">over mij</a></li>
                 <li><a href="##">projects</a></li>
-                <li><a href="##">contact</a></li>
+                <li><a href="#footer">contact</a></li>
             </ul>
         </nav>
     )

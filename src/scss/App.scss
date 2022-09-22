@@ -25,3 +25,26 @@ body {
 main {
     width: 70vw;
 }
+
+
+//
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $secondary-clr;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

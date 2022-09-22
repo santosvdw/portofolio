@@ -26,7 +26,7 @@ export default function Code() {
                         <span className="red">function </span><span className='purple'>greeting</span><span className="purple">(</span>name, age<span className="purple">) &#123;</span>
                     </li>
                     <li className='indent'>
-                        console.<span className='purple'>log</span>(<span className='light-blue'>`Hi I'm </span>$&#123;name&#125;<span className='light-blue'> and I am </span>$&#123;age&#125;<span className='light-blue'> years old. It's nice to meet you!`</span>)
+                        console.<span className='purple'>log</span>(<span className='light-blue'>`Hoi! Ik ben </span>$&#123;name&#125;<span className='light-blue'> en ik ben </span>$&#123;age&#125;<span className='light-blue'> jaar oud. Leuk je te ontmoeten!`</span>)
                     </li>
                     <li>
                         <span className="purple">&#125;</span>
@@ -37,7 +37,7 @@ export default function Code() {
                     </li>
                 </ul>
                 <ul id='console'>
-                    <li><span className='dark-blue'>Hi, I'm Santos and I'm {new Date().getFullYear() - 2007} years old. It's nice to meet you!</span></li>
+                    <li><span className='dark-blue'>Hoi! Ik ben Santos en ik ben {new Date().getFullYear() - 2007} jaar oud. Leuk je te ontmoeten!</span></li>
                 </ul>
             </div>
         </section>
