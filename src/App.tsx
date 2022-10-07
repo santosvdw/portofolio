@@ -1,6 +1,6 @@
 // Compontents
-import OverlayRight from './components/OverlayLeft';
-import OverlayLeft from './components/OverlayRight'
+import OverlayLeft from './components/OverlayLeft';
+import OverlayRight from './components/OverlayRight'
 import Nav from './components/Nav'
 import Header from './components/Header';
 import Code from './components/Code';
@@ -17,14 +17,14 @@ function App() {
   return (
     <div className="App">
       <div className='wrapper'>
-        <OverlayRight/>
+        <OverlayLeft/>
         <main>
           <Nav />
           <Header />
           <Code />
           <Projects/>
         </main>
-        <OverlayLeft/>
+        <OverlayRight/>
       </div>
       <Footer />
     </div>
