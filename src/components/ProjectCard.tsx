@@ -1,8 +1,8 @@
 export default function ProjectCard (data: any) {
-    console.log(data)
+    const {name, id} = data.data
     return (
     <div>
-        <h1>hoi</h1>
+        <h1>{name}</h1>
     </div>
     )
 }

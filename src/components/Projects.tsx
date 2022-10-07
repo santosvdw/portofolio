@@ -1,33 +1,22 @@
+import useFetch from 'react-fetch-hook';
 import '../scss/projects.scss';
 import ProjectCard from './ProjectCard';
 
 
-// GH user data
+export default function Projects() {
+    const githubUrl: string = 'https://api.github.com/users/santosvdw/repos'
+    let {isLoading, error, data} = useFetch(githubUrl)
 
-const githubUrl: string = 'https://api.github.com/users/santosvdw/repos'
-
-const getGitHubUserData = async () => {
-  const response = await fetch(githubUrl);
-  const jsonData = await response.json();
-  let projects: any = []
-    for (let i = 0; i < jsonData.length; i++) {
-      if (jsonData[i].size > 5000) {
-        projects = [...projects, jsonData[i]]
-    }
-}
-    Projects(projects)
-};
-
-getGitHubUserData()
-
-export default function Projects(data: any) {
-    data = Array.from(data)
+    if (isLoading) {return <p>Loading...</p>}
+    if (error) {return <p>An error has occurred.</p>}
     
-    const dataItems = data.map((d: { node_id: any; }) => <ProjectCard key={d.node_id} props={d} />)
-    console.log(data)
+    const items: any = data
+    const filteredItems = items.filter((i: { size: number; }) => i.size > 6000)
+    const cards = filteredItems.map((d: { node_id: any; })=> <ProjectCard key={d.node_id} data={d} />)
+
     return (
     <section id='projects'>
-        {dataItems}
+        {cards}
     </section>
     )
 }
