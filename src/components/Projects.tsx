@@ -11,7 +11,7 @@ export default function Projects() {
     if (error) {return <p>An error has occurred.</p>}
     
     const items: any = data
-    const filteredItems = items.filter((i: { size: number; }) => i.size > 6000)
+    const filteredItems = items.filter((i: { size: number; }) => i.size > 5000)
     const cards = filteredItems.map((d: { node_id: any; })=> <ProjectCard key={d.node_id} data={d} />)
 
     return (
