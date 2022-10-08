@@ -1,4 +1,4 @@
-import '../scss/header.scss'
+import '../stylesheets/header.scss'
 
 export default function Header () {
     const tags = ['javascript', 'html', 'css', 'typescript', 'scss', 'react']

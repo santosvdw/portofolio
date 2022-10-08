@@ -1,4 +1,4 @@
-import '../scss/overlays.scss'
+import '../stylesheets/overlays.scss'
 
 export default function OverlayRight () {
     return (

@@ -1,5 +1,5 @@
 import useFetch from 'react-fetch-hook';
-import '../scss/projects.scss';
+import '../stylesheets/projects.scss';
 import ProjectCard from './ProjectCard';
 
 

@@ -8,8 +8,8 @@ import Projects from './components/Projects';
 import Footer from './components/Footer';
 //
 import React from 'react';
-import './scss/App.scss';
-import './scss/typography.scss';
+import './stylesheets/App.scss';
+import './stylesheets/typography.scss';
 
 
 

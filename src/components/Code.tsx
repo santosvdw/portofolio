@@ -1,4 +1,4 @@
-import '../scss/code.scss'
+import '../stylesheets/code.scss'
 
 export default function Code() {
     return (
