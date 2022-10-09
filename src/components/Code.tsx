@@ -6,34 +6,34 @@ export default function Code() {
             <div className="code">
                 <ul id='js'>
                     <li>
-                        <span className="red">const</span> me <span className="purple">= &#123;</span>
+                        <span className="red">const</span> ik <span className="purple">= &#123;</span>
                     </li>
                     <li className='indent'>
-                        <span className='dark-blue'>first_name</span>: <span className='light-blue'>"Santos"</span>,
+                        <span className='dark-blue'>voornaam</span>: <span className='light-blue'>"Santos"</span>,
                     </li>
                     <li className='indent'>
-                        <span className='dark-blue'>age</span>: <span className="red">new</span> <span className='orange'>Date</span>().<span className='purple'>getFullYear</span>() - <span className='light-blue'>{(new Date().getMonth() > 6 ? 2007 : 2006)}</span>
+                        <span className='dark-blue'>leeftijd</span>: <span className="red">new</span> <span className='orange'>Date</span>().<span className='purple'>getFullYear</span>() - <span className='light-blue'>{(new Date().getMonth() > 6 ? 2007 : 2006)}</span>
                     </li>
                     <li>
                         <span className="purple">&#125;</span>
                     </li>
                     <li><br/></li>
                     <li>
-                        <span className="red">const </span><span className='purple'>&#123;</span>first_name, age<span className="purple">&#125;</span> <span className='light-blue'>=</span> me
+                        <span className="red">const </span><span className='purple'>&#123;</span>voornaam, leeftijd<span className="purple">&#125;</span> <span className='light-blue'>=</span> ik
                     </li>
                     <li><br /></li>
                     <li>
-                        <span className="red">function </span><span className='purple'>greeting</span><span className="purple">(</span>name, age<span className="purple">) &#123;</span>
+                        <span className="red">function </span><span className='purple'>voorstellen</span><span className="purple">(</span>naam, leeftijd<span className="purple">) &#123;</span>
                     </li>
                     <li className='indent'>
-                        console.<span className='purple'>log</span>(<span className='light-blue'>`Hoi! Ik ben </span>$&#123;name&#125;<span className='light-blue'> en ik ben </span>$&#123;age&#125;<span className='light-blue'> jaar oud. Leuk je te ontmoeten!`</span>)
+                        console.<span className='purple'>log</span>(<span className='light-blue'>`Hoi! Ik ben </span>$&#123;naam&#125;<span className='light-blue'> en ik ben </span>$&#123;leeftijd&#125;<span className='light-blue'> jaar oud. Leuk je te ontmoeten!`</span>)
                     </li>
                     <li>
                         <span className="purple">&#125;</span>
                     </li>
                     <li><br /></li>
                     <li>
-                        <span className='purple'>greeting</span><span className="purple">(</span>first_name, age<span className="purple">)</span>
+                        <span className='purple'>voorstellen</span><span className="purple">(</span>voornaam, leeftijd<span className="purple">)</span>
                     </li>
                 </ul>
                 <ul id='console'>

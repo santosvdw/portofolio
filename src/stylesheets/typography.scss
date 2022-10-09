@@ -10,27 +10,27 @@ h1 {
 }
 
 h2 {
-    font-size: $h2-size;
+    font-size: $step-5;
 }
 
 h3 {
-    font-size: $h3-size;
+    font-size: $step-4;
 }
 
 h4 {
-    font-size: $h4-size;
+    font-size: $step-3;
 }
 
 h5 {
-    font-size: $h5-size;
+    font-size: $step-2;
 }
 
 h6 {
-    font-size: $h6-size;
+    font-size: $step-1;
 }
 
 body {
     font-family: inter, arial, sans-serif;
     color: $white;
-    font-size: $p-size;
+    font-size: calc($step-0 * 1.1);
 }

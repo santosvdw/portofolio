@@ -2,13 +2,13 @@
 
 nav {
     width: 100%;
-    padding: 80px 0;
+    padding: calc($space-2xl * 1.25) 0;
 
     ul {
         display: flex;
         flex-flow: row wrap;
         list-style-type: none;
-        gap: 60px;
+        gap: $space-2xl;
 
         a {
             text-decoration: none;

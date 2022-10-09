@@ -1,7 +1,7 @@
 import '../stylesheets/header.scss'
 
 export default function Header () {
-    const tags = ['javascript', 'html', 'css', 'typescript', 'scss', 'react']
+    const tags = ['javascript', 'html', 'css', 'scss', 'typescript','react']
     const tag = tags.map(t => <span className='header-tag'>{t}</span>)
     return (
         <header>

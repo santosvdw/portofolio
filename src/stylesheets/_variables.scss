@@ -9,10 +9,41 @@ $grey: #1E1E1E;
 
 // 
 
-$h1-size: 6rem;
-$h2-size: 4.182rem;
-$h3-size: 2.924rem;
-$h4-size: 2.045rem;
-$h5-size: 1.43rem;
-$h6-size: 1.25rem;
-$p-size: 1rem;
+
+// Responsiveness
+
+$fluid-min-width: 320;
+$fluid-max-width: 1366;
+
+$fluid-screen: 100vw;
+$fluid-bp: calc((($fluid-screen) - ($fluid-min-width) / 16 * 1rem) / (($fluid-max-width) - ($fluid-min-width)));
+
+ @media screen and (min-width: 1366px) {
+     :root {
+         $fluid-screen: calc(($fluid-max-width) * 1px);
+        }
+    }
+    
+  $step--2: clamp(0.56rem, calc(0.54rem + 0.12vw), 0.64rem);
+  $step--1: clamp(0.70rem, calc(0.67rem + 0.15vw), 0.80rem);
+  $step-0: clamp(0.88rem, calc(0.84rem + 0.19vw), 1.10rem);
+  $step-1: clamp(1.09rem, calc(1.05rem + 0.24vw), 1.35rem);
+  $step-2: clamp(1.37rem, calc(1.31rem + 0.30vw), 1.56rem);
+  $step-3: clamp(1.71rem, calc(1.63rem + 0.37vw), 1.95rem);
+  $step-4: clamp(2.14rem, calc(2.04rem + 0.47vw), 2.44rem);
+  $step-5: clamp(2.67rem, calc(2.55rem + 0.58vw), 3.05rem);
+  
+  // spaace
+  
+  $space-2xs: clamp(0.19rem, calc(0.09rem + 0.48vw), 0.50rem);
+  $space-xs: clamp(0.38rem, calc(0.26rem + 0.57vw), 0.75rem);
+  $space-s: clamp(0.56rem, calc(0.43rem + 0.67vw), 1.00rem);
+  $space-m: clamp(0.75rem, calc(0.52rem + 1.15vw), 1.50rem);
+  $space-l: clamp(1.13rem, calc(0.86rem + 1.34vw), 2.00rem);
+  $space-xl: clamp(1.50rem, calc(1.04rem + 2.29vw), 3.00rem);
+  $space-2xl: clamp(2.25rem, calc(1.71rem + 2.68vw), 4.00rem);
+  $space-3xl: clamp(3.00rem, calc(2.08rem + 4.59vw), 6.00rem);
+  $title: clamp(2.00rem, calc(2.08rem + 4.59vw), 5.50rem);
+  
+  
+  $h1-size: $title;

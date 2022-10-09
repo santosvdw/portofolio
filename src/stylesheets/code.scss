@@ -1,18 +1,18 @@
 @use './variables' as *;
 
 #abt-me {
-    margin-top: 100px;
+    margin-top: $space-3xl;
     font-family: DM mono, monospace;
 }
 
 .code ul {
     background-color: $grey;
     border-radius: 15px;
-    padding: 20px 30px;
+    padding: $space-m $space-l;
     list-style: none;
 
     &#console {
-        margin-top: 25px;
+        margin-top: $space-m;
     }
 }
 
@@ -42,6 +42,6 @@
 }
 
 .indent {
-    margin-inline-start: 20px;
+    margin-inline-start: $space-m;
 }
 

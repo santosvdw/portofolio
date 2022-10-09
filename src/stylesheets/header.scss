@@ -11,14 +11,23 @@ header {
         }
 
         li:nth-of-type(even) {
-            margin-inline-start: 150px;
+            margin-inline-start: calc($space-3xl * 1.2);
+            width: 60vw;
+        }
+        @media screen and (max-width: 400px) {
+            li:nth-of-type(even) {
+                width: 70vw;
+                margin-inline-start: calc($space-2xl);
+            }
         }
     }
 
     .tags {
         display: flex;
-        margin-top: 25px;
-        gap: 10px;
+        width: 70vw;
+        flex-flow: row wrap;
+        margin-top: $space-m;
+        gap: $space-xs;
         .header-tag {
             background-color: #1f1f1fcc;
             padding: 3px 8px;
