@@ -39,6 +39,9 @@ export default function Code() {
                 <ul id='console'>
                     <li><span className='dark-blue'>Hoi! Ik ben Santos en ik ben {new Date().getFullYear() - (new Date().getMonth() > 6 ? 2007 : 2006)} jaar oud. Leuk je te ontmoeten!</span></li>
                 </ul>
+                {
+                    // Add styling in scss files!!!
+                }
             </div>
         </section>
     )

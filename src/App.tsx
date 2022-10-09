@@ -11,7 +11,6 @@ import React from 'react';
 import './stylesheets/App.scss';
 import './stylesheets/typography.scss';
 
-console.log(window)
 
 function App() {
   return (

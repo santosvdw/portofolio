@@ -4,7 +4,6 @@ import '../stylesheets/project_card.scss';
 export default function ProjectCard (data: any) {
     
     const {name, id, html_url, owner, description, language, topics} = data.data
-    console.log(data.data)
 
     const previewImg:string = `https://raw.githubusercontent.com/${owner.login}/${name}/master/preview.png`
 
@@ -22,6 +21,10 @@ export default function ProjectCard (data: any) {
         case "PHP": color = "purple"; break;
         case "C": color = "grey"; break;
         case "Jupyter Notebook": color = "orange"; break;
+        case "C++": color = "pink"; break;
+        case "Vue": color = "green"; break;
+        case "Java": color = "red"; break;
+        case "Rust": color = "grey"; break;
     }
     const topicTags = topics.map((t: string) => <p className='topic-tag'>{t}</p>)
 
@@ -52,6 +55,9 @@ export default function ProjectCard (data: any) {
                 <i className="bi bi-box-arrow-up-right"></i>
             </a>
         </div>
+        {
+            // Extra dingen toevoegen????
+        }
     </section>
     )
 }
