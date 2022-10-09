@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/portofolionpm%20install%20--save%20gh-pages/static/css/main.0dc49e27.css",
+    "main.js": "/portofolionpm%20install%20--save%20gh-pages/static/js/main.3cd9a4c9.js",
+    "index.html": "/portofolionpm%20install%20--save%20gh-pages/index.html",
+    "main.0dc49e27.css.map": "/portofolionpm%20install%20--save%20gh-pages/static/css/main.0dc49e27.css.map",
+    "main.3cd9a4c9.js.map": "/portofolionpm%20install%20--save%20gh-pages/static/js/main.3cd9a4c9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0dc49e27.css",
+    "static/js/main.3cd9a4c9.js"
+  ]
+}
