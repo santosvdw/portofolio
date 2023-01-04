@@ -12,7 +12,7 @@ export default function Code() {
                         <span className='dark-blue'>voornaam</span>: <span className='light-blue'>"Santos"</span>,
                     </li>
                     <li className='indent'>
-                        <span className='dark-blue'>leeftijd</span>: <span className="red">new</span> <span className='orange'>Date</span>().<span className='purple'>getFullYear</span>() - <span className='light-blue'>{(new Date().getMonth() > 6 ? 2007 : 2006)}</span>
+                        <span className='dark-blue'>leeftijd</span>: <span className="red">new</span> <span className='orange'>Date</span>().<span className='purple'>getFullYear</span>() - <span className='light-blue'>{(new Date().getMonth() > 6 ? 2007 : 2008)}</span>
                     </li>
                     <li>
                         <span className="purple">&#125;</span>
@@ -37,7 +37,7 @@ export default function Code() {
                     </li>
                 </ul>
                 <ul id='console'>
-                    <li><span className='dark-blue'>Hoi! Ik ben Santos en ik ben {new Date().getFullYear() - (new Date().getMonth() > 6 ? 2007 : 2006)} jaar oud. Leuk je te ontmoeten!</span></li>
+                    <li><span className='dark-blue'>Hoi! Ik ben Santos en ik ben {new Date().getFullYear() - (new Date().getMonth() > 6 ? 2007 : 2008)} jaar oud. Leuk je te ontmoeten!</span></li>
                 </ul>
                 {
                     // Add styling in scss files!!!
